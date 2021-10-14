@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -13,23 +9,9 @@
     <link rel="stylesheet" href="css/stylesheet.css" />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your
-        experience.
-      </p>
-    <![endif]-->
-    <nav id="navbar">
-      <a class="nav-elem" href="navbar.html">this is the nav bar</a> | <a class="nav-elem" href="index.html">home</a> |
-      <!-- link to a plain html of the navbar it would be funny -->
-      <!-- <a class="nav-elem">lyrics</a> -->
-      <a class="nav-elem" href="pomes.html">pomes</a> | <a class="nav-elem" href="links.html">links</a> |
-      <a class="nav-elem" href="about.html">about</a> |
-      <a class="nav-elem" href="reccomendations.html">reccomendations</a> |
-      <a class="nav-elem" href="terms.html">terms and conditions</a>
-      <!-- <a class="nav-elem">cookies</a> -->
-      <!-- <a class="nav-elem">blog</a> -->
-    </nav>
-    <script src="" async defer></script>
+    <?php
+      include(js/navbar.html);
+    ?>
+    <!-- <script src="js/navbar.js"></script> -->
   </body>
 </html>

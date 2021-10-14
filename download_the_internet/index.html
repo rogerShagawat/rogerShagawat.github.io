@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Download The Internet</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your
+        experience.
+      </p>
+    <![endif]-->
+
+    <div class="main-container">
+      <div class="sub-container" id="currency-container">
+        <div id="total-bits">Total Bits Downloaded: 0</div>
+        <div id="money">Money: $0</div>
+        <div id="bits">Bits: 0</div>
+        <div id="delta-bits">&Delta; Bits: 0</div>
+      </div>
+
+      <div class="sub-container">
+        <div id="bit-price">Bits Sell For: $0</div>
+        <button onclick="sell_bits(bits)" id="sell-bits">Sell Bits</button>
+      </div>
+
+      <div class="sub-container" id="building-container">
+        <div class="building-container" id="searches-container">
+          <div class="inline" id="searches-bought">Searches: 0</div>
+          <div class="inline" id="searches-cost">$0.001</div>
+          <button onclick="searches.buy()" class="inline" id="searches-buy-button">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/searches.js"></script>
+    <script src="javascript/bits.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

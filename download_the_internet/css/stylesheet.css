@@ -1,0 +1,15 @@
+body {
+  font-size: large;
+  background: #000;
+  color: #fff;
+}
+.inline {
+  display: inline-block;
+}
+/* a {
+  color: #cff;
+  text-decoration: inherit;
+}
+a:hover {
+  background-color: rgb(88, 88, 88);
+} */
