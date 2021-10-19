@@ -14,14 +14,14 @@ let elements = {
 let total_ticks = 0;
 let tick_duration = 2000;
 let total_bits = 0;
-let bits = 0;
+let bits = 10;
 let delta_bits = 0;
-let money = 1e-3;
+let money = 0;
 let bit_price = 1e-4;
 let buy_mode = "1";
 
 function init() {
-  elements.bit_price.innerHTML = "Bits Sell For: $" + bit_price;
+  render();
 }
 
 function tick() {
@@ -32,13 +32,19 @@ function tick() {
   bits += delta_bits;
 
   if (render) {
-    elements.total_bits.innerHTML = "Total Bits Downloaded: " + total_bits;
-    elements.money.innerHTML = "Money: $" + money;
-    elements.bits.innerHTML = "Bits: " + bits;
-    elements.delta_bits.innerHTML = "&Delta; Bits: " + delta_bits;
   }
 
   total_ticks++;
+}
+
+function render() {
+  elements.total_bits.innerHTML = "Total Bits Downloaded: " + total_bits;
+  elements.money.innerHTML = "Money: $" + money;
+  elements.bits.innerHTML = "Bits: " + bits;
+  elements.delta_bits.innerHTML = "&Delta; Bits: " + delta_bits;
+  elements.bit_price.innerHTML = "Bits Sell For: $" + bit_price;
+  elements.searches_bought.innerHTML = "Searches: " + this.bought;
+  elements.searches_cost.innerHTML = "$" + this.cost;
 }
 
 function tickLoop(timestamp) {
@@ -49,6 +55,7 @@ function tickLoop(timestamp) {
     time_since_last_tick -= tick_duration;
     tick();
   }
+  render();
   last_render = timestamp;
   window.requestAnimationFrame(tickLoop);
 }

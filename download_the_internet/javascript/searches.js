@@ -7,28 +7,23 @@ function searches() {
     let delta_bits = 0;
     delta_bits = this.bought * this.bits_per_tick;
 
-    if (render) {
-      elements.searches_bought.innerHTML = "Searches: " + this.bought;
-      elements.searches_cost.innerHTML = "$" + this.cost;
-    }
-
     return delta_bits;
   };
 
   buy = function () {
     let buy_one = function () {
-      console.log(searches.cost);
-      if (money < searches.cost) {
+      console.log(this.cost);
+      if (money < this.cost) {
         return false;
       }
-      money = money - searches.cost;
-      searches.bought++;
+      money = money - this.cost;
+      this.bought++;
       return true;
     };
 
     let new_cost = function () {
       if (bought > 0) {
-        searches.cost = searches.base_cost * bought;
+        this.cost = this.base_cost * bought;
       }
     };
 
@@ -50,11 +45,5 @@ function searches() {
     }
 
     new_cost();
-
-    if (render) {
-      elements.searches_bought.innerHTML = "Searches: " + this.bought;
-      elements.searches_cost.innerHTML = "$" + this.cost;
-      elements.money.innerHTML = "Money: $" + money;
-    }
   };
 }
