@@ -1,5 +1,4 @@
 let paused = false;
-let render = true;
 
 let elements = {
   total_bits: document.getElementById("total-bits"),

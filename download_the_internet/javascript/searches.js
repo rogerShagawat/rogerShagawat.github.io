@@ -1,6 +1,6 @@
 function searches() {
-  base_cost = 1e-3;
-  this.cost = searches.base_cost;
+  this.base_cost = 1e-3;
+  this.cost = this.base_cost;
   this.bought = 0;
   this.bits_per_tick = 1;
   tick = function () {
