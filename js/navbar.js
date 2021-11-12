@@ -7,7 +7,7 @@ var variable =
   '  <a class="nav-elem" href="pomes.html">pomes</a> | <a class="nav-elem" href="links.html">links</a> |' +
   '  <a class="nav-elem" href="about.html">about</a> |' +
   '  <a class="nav-elem" href="reccomendations.html">reccomendations</a> |' +
-  '  <a class="nav-elem" href="terms.html">art</a> |' +
+  '  <a class="nav-elem" href="art.html">art</a> |' +
   '  <a class="nav-elem" href="terms.html">terms and conditions</a>' +
   '  <!-- <a class="nav-elem">cookies</a> -->' +
   '  <!-- <a class="nav-elem">blog</a> -->' +
