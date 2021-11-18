@@ -7,6 +7,7 @@
 
 let player = {
   time: 0,
+  ticks: 0,
   total_bits: 0,
   bits: 0,
   money: 0,
