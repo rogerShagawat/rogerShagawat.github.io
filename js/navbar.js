@@ -12,6 +12,7 @@ var variable =
   '  <!-- <a class="nav-elem">cookies</a> -->' +
   '  <!-- <a class="nav-elem">blog</a> -->' +
   "</nav>" +
+  '<hr />' +
   "";
 document.write(variable);
 

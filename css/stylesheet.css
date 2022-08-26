@@ -13,12 +13,14 @@ a {
 a:hover {
   background-color: violet;
 }
+hr.solid {
+  border-top: 50px solid #bbb;
+}
 
 .container {
   margin: 0%;
   padding: 0%;
 }
-
 .hidden-link {
   color: wheat;
   text-decoration: none;
@@ -26,6 +28,6 @@ a:hover {
 .hidden-link:hover {
   background-color: transparent;
 }
-hr.solid {
-  border-top: 50px solid #bbb;
+.center {
+  text-align: center;
 }
