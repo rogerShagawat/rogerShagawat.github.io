@@ -15,22 +15,12 @@ var variable =
   "";
 document.write(variable);
 
-// function readTextFile(file) {
-//   var rawFile = new XMLHttpRequest();
-//   rawFile.open("GET", file, false);
-//   rawFile.onreadystatechange = function () {
-//     if (rawFile.readyState === 4) {
-//       if (rawFile.status === 200 || rawFile.status == 0) {
-//         var allText = rawFile.responseText;
-//         alert(allText);
-//       }
-//     }
-//   };
-//   rawFile.send(null);
-// }
-
-// readTextFile("navbar.html");
-
-// fetch("navbar.html")
-//   .then((response) => response.html())
-//   .then((data) => console.log(data));
+/* const nav = document.querySelector('.navbar')
+fetch('js/navbar.html')
+.then(res=>res.text())
+.then(data=>{
+    nav.innerHTML=data
+    const parser = new DOMParser()
+    const doc = parser.parseFromString(data, 'text/html')
+    eval(doc.querySelector('script').textContent)
+}) */
