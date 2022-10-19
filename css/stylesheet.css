@@ -31,3 +31,22 @@ hr.solid {
 .center {
   text-align: center;
 }
+
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+#rotate_image_90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
