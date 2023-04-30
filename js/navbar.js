@@ -1,7 +1,7 @@
 var variable =
   "" +
   '<nav id="navbar">' +
-  '  <a class="nav-elem" href="navbar.html">this the nav bar</a> | <a class="nav-elem" href="index.html">home</a> |' +
+  '  <a class="nav-elem" href="navbar.html">nav bar</a> | <a class="nav-elem" href="index.html">home</a> |' +
   "  <!-- link to a plain html of the navbar it would be funny -->" +
   '  <!-- <a class="nav-elem">lyrics</a> -->' +
   '  <a class="nav-elem" href="pomes.html">pomes</a> | <a class="nav-elem" href="links.html">links</a> |' +
